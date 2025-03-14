@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCCI - Merchandise Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover,
+        nav ul li a:focus,
+        nav ul li a:active {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="BCCI-Logo.png" alt="BCCI Logo" class="logo">
+        <h2>Board of Control for Cricket in India</h2>
+        <h1>Form Tags Demo - Buy Official Merchandise</h1>
+        <nav >
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="text.html">Text Formats</a></li>
+                <li><a href="lists.html">Lists</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                <li><a href="forms.html">Forms</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Merchandise Order Form: This webpage demonstrates buying of Merchandise through FORM TAGS</h2>
+            <form  method="Post" onsubmit="alert('Thank you for your order! Have a Good Day'); ">
+                <label for="a1">Name:</label>
+                <input type="text" id="a1" name="a2" required><br><br>
+
+                <label for="b1">Date of Birth:</label>
+                <input type="date" id="b1" name="b2" required><br><br>
+
+                <label for="c1">Mobile Number:</label>
+                <input type="tel" id="c1" name="c2" pattern="[0-9]{10}" required><br><br>
+
+                <label for="d1">Email:</label>
+                <input type="email" id="d1" name="d2" required><br><br>
+
+                <label for="e1">Password:</label>
+                <input type="password" id="e1" name="e2" required><br><br>
+
+                <label>Gender:</label>
+                <input type="radio" id="f1" name="f2" value="male" required>
+                <label for="f1">Male</label>
+                <input type="radio" id="f3" name="f2" value="female">
+                <label for="f3">Female</label><br><br>
+
+                <label for="g1">Favorite Cricketer Merchandise:</label>
+                <select id="g1" name="g2" required>
+                    <option value="1">Virat Kohli</option>
+                    <option value="2">Rohit Sharma</option>
+                    <option value="3">Jasprit Bumrah</option>
+                    <option value="4">KL Rahul</option>
+                    <option value="5">Ravindra Jadeja</option>
+                    <option value="6">Others</option>
+                </select><br><br>
+
+                <label for="h1">Additional Comments:</label><br>
+                <textarea id="h1" name="h2" rows="4" cols="50" placeholder="If you selected 'Others', please specify the cricketer here..."></textarea><br><br>
+
+                <label for="i1">Upload Address Validation Document (PDF, DOC, JPG, PNG):</label>
+                <input type="file" id="i1" name="i2" accept=".pdf, .doc, .jpg, .jpeg, .png" required><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p> MONISH GOWDA SR  |  1MJ22IS062  |  2025 BCCI</p>
+    </footer>
+</body>
+</html>
